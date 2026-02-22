@@ -373,15 +373,15 @@ export const LCut: React.FC<EffectProps> = ({ title, description, colors, audioB
 
   return (
     <div style={{ position: "relative", width: WIDTH, height: HEIGHT, background: colors.bg, overflow: "hidden" }}>
-      {/* Audio A (SUMMER_TRIANGLE_2): 映像フェードアウト後も60フレーム=2秒残る（Lカットの本質） */}
+      {/* Audio A (TrackA): 映像フェードアウト後も60フレーム=2秒残る（Lカットの本質） */}
       <Audio
-        src={staticFile("audio/SUMMER_TRIANGLE_2.mp3")}
+        src={staticFile("audio/TrackA.mp3")}
         volume={(f) => interpolate(f, [90, 150], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
       />
-      {/* Audio B (2 23_AM_2): Audio A消滅後(frame 150)から登場 */}
+      {/* Audio B (TrackB): Audio A消滅後(frame 150)から登場 */}
       <Sequence from={150}>
         <Audio
-          src={staticFile("audio/2 23_AM_2.mp3")}
+          src={staticFile("audio/TrackB.mp3")}
           volume={(f) => audioBVolume * interpolate(f, [0, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
         />
       </Sequence>
@@ -473,15 +473,15 @@ export const JCut: React.FC<EffectProps> = ({ title, description, colors, audioB
 
   return (
     <div style={{ position: "relative", width: WIDTH, height: HEIGHT, background: colors.bg, overflow: "hidden" }}>
-      {/* Audio A (SUMMER_TRIANGLE_2): Audio Bフェードイン開始と同時にフェードアウト */}
+      {/* Audio A (TrackA): Audio Bフェードイン開始と同時にフェードアウト */}
       <Audio
-        src={staticFile("audio/SUMMER_TRIANGLE_2.mp3")}
+        src={staticFile("audio/TrackA.mp3")}
         volume={(f) => interpolate(f, [150, 180], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
       />
-      {/* Audio B (2 23_AM_2): 映像カット2秒前(frame 150)から先行して入る（Jカットの本質） */}
+      {/* Audio B (TrackB): 映像カット2秒前(frame 150)から先行して入る（Jカットの本質） */}
       <Sequence from={150}>
         <Audio
-          src={staticFile("audio/2 23_AM_2.mp3")}
+          src={staticFile("audio/TrackB.mp3")}
           volume={(f) => audioBVolume * interpolate(f, [0, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
         />
       </Sequence>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "24種類のトランジション表現の辞書 - Remotion",
   "repository": {},
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.427",
