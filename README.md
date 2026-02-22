@@ -94,7 +94,7 @@ npx remotion render <CompositionID>
 
 YouTubeの紹介動画では、以下のクリエイター様の素材をお借りしています。
 いつも大変お世話になっております！
-**動画公開次第リンクを貼る**
+[【ソースコードあり】Remotionでできる！トランジション24選【VOICEROID解説】](https://youtu.be/7-V1psUxCEA)
 
 #### Font
 - おたもん様 — [源暎エムゴ(GenEi M Gothic)](https://okoneya.jp/font/genei-m-gothic.html)
