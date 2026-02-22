@@ -97,7 +97,7 @@ YouTubeの紹介動画では、以下のクリエイター様の素材をお借�
 **動画公開次第リンクを貼る**
 
 #### Font
-- [源暎Mゴシック2（GenEi M Gothic 2）](https://okoneya.jp/font/genei-m-gothic.html)
+- [源暎エムゴ(GenEi M Gothic)](https://okoneya.jp/font/genei-m-gothic.html)
 
 #### Image
 - ふにちか様 — [ニコニコ静画](https://seiga.nicovideo.jp/seiga/im9809464)
