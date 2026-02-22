@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+.env
+skills
+skills-lock.json
+font
+.claude
+image
+audio
+
+# Ignore the output video from Git but not videos you import into src/.
+out
